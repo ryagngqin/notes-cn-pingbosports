@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>平博体育 · 简明指南</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #faf7f0;
+      font-family: 'Georgia', 'Times New Roman', '宋体', serif;
+      color: #2e2b28;
+      line-height: 1.75;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    .page-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* hero 区 — 开场短句 */
+    .hero-note {
+      margin: 2rem 0 2.5rem;
+      border-left: 6px solid #c9b99a;
+      padding-left: 1.8rem;
+    }
+
+    .hero-note .opening {
+      font-size: 1.8rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: #3d352c;
+      line-height: 1.4;
+    }
+
+    .hero-note .opening em {
+      font-style: italic;
+      color: #7a6b56;
+    }
+
+    /* 承接段落 */
+    .intro-section {
+      margin-bottom: 3rem;
+    }
+
+    .intro-section p {
+      margin-bottom: 1.2rem;
+      font-size: 1.08rem;
+      text-align: justify;
+    }
+
+    .intro-section p:first-child::first-letter {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #8f7a60;
+      margin-right: 4px;
+      line-height: 1;
+    }
+
+    /* 引用 / 提示框 */
+    .gentle-tip {
+      background: #f0ebe0;
+      border: 1px solid #ddd6c5;
+      border-radius: 20px 8px 20px 8px;
+      padding: 1.8rem 2rem;
+      margin: 2.2rem 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+    }
+
+    .gentle-tip p {
+      margin-bottom: 0.6rem;
+      font-size: 1rem;
+    }
+
+    .gentle-tip .tip-label {
+      display: inline-block;
+      background: #c9b99a;
+      color: #faf7f0;
+      padding: 0.1rem 0.9rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
+
+    /* 特点列表 — 温和卡片式 */
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+
+    .feature-card {
+      background: #ffffffda;
+      backdrop-filter: blur(2px);
+      flex: 1 1 200px;
+      padding: 1.6rem 1.2rem;
+      border-radius: 18px;
+      border: 1px solid #e3daca;
+      transition: all 0.2s ease;
+    }
+
+    .feature-card:hover {
+      background: #fffaf2;
+      border-color: #c1ae92;
+      transform: translateY(-2px);
+    }
+
+    .feature-card h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      border-bottom: 1px dashed #d4caba;
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.8rem;
+      color: #4c4036;
+    }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #3f3a34;
+    }
+
+    /* 场景 / 温和结尾区块 */
+    .closing-note {
+      margin-top: 3.2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #ddd3c2;
+    }
+
+    .closing-note p {
+      font-size: 1.06rem;
+      margin-bottom: 1rem;
+    }
+
+    .closing-note .quote-block {
+      background: transparent;
+      border-left: 4px solid #b8a78b;
+      padding: 1rem 1.8rem;
+      margin: 1.8rem 0;
+      color: #4f463d;
+      font-style: italic;
+    }
+
+    .closing-note .quote-block cite {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #837562;
+      font-style: normal;
+    }
+
+    /* 链接样式 */
+    a {
+      color: #735d42;
+      text-decoration: none;
+      border-bottom: 1px dotted #b8a78b;
+      transition: border-bottom 0.1s;
+    }
+
+    a:hover {
+      border-bottom: 2px solid #735d42;
+    }
+
+    /* 响应式 */
+    @media (max-width: 560px) {
+      body {
+        padding: 1.5rem 1rem 3rem;
+      }
+      .hero-note .opening {
+        font-size: 1.5rem;
+      }
+      .feature-grid {
+        flex-direction: column;
+      }
+      .gentle-tip {
+        padding: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <!-- 开场短句 -->
+  <div class="hero-note">
+    <div class="opening">
+      从何处开始<br>
+      并不总是一个明确的问题。<br>
+      <em>有时只需要一点指引。</em>
+    </div>
+  </div>
+
+  <!-- 承接段落 —— 简明指南式切入 -->
+  <div class="intro-section">
+    <p>
+      在体育与娱乐交织的领域里，找到一条清晰、可靠的路径往往比想象中更重要。对许多刚刚接触的朋友而言，第一步的体验往往决定了后续的印象。因此，我们尝试用最平实的语言，整理出一份关于 <a href="https://cn-pingbosports.com">平博体育</a> 的简要指南——不是陈词滥调，而是可供参考的线索。
+    </p>
+    <p>
+      这份指南不追求面面俱到，而是聚焦于那些真正值得留意的细节：平台如何呈现内容、用户可以从哪些角度理解它的结构、以及日常使用中容易被忽略的注意事项。希望它能成为你手边一张温和的路线图。
+    </p>
+  </div>
+
+  <!-- 提示框 —— 访问提醒风格 -->
+  <div class="gentle-tip">
+    <span class="tip-label">· 访问提示 ·</span>
+    <p>当你打开 <a href="https://cn-pingbosports.com">平博体育</a> 时，不妨花一两分钟浏览首页的栏目分布。很多信息其实就藏在最直观的位置，不需要费力寻找。</p>
+    <p>另外，如果遇到页面加载稍慢，可以先检查网络环境，或是换一个时段再试——大多数时候这只是一个小小插曲。</p>
+  </div>
+
+  <!-- 特点列表 —— 温和卡片式 -->
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3>信息层次</h3>
+      <p>板块划分比较清晰，赛事、娱乐、资讯各自独立，减少不必要的跳转。适合按兴趣逐步深入。</p>
+    </div>
+    <div class="feature-card">
+      <h3>视觉风格</h3>
+      <p>整体以低饱和与中性色为主，没有过度花哨的动效。阅读时眼睛不容易疲劳，长时间浏览也相对舒适。</p>
+    </div>
+    <div class="feature-card">
+      <h3>操作反馈</h3>
+      <p>点击和切换的响应速度比较稳定，关键按钮的位置符合多数网站的习惯，新手适应期较短。</p>
+    </div>
+  </div>
+
+  <!-- 温和结尾 + 引用块 / FAQ 摘要式 -->
+  <div class="closing-note">
+    <p>
+      一份好的指南，不在于塞满信息，而在于帮人省下摸索的时间。希望上面这些零碎但真实的观察，能让你在使用 <a href="https://cn-pingbosports.com">平博体育</a> 的过程中少一点疑惑，多一点从容。
+    </p>
+
+    <div class="quote-block">
+      “有时候，最普通的提醒反而最有用：注意浏览器的地址栏是否显示安全锁，留意页面是否被正确加载，以及——选择自己真正感兴趣的内容。”
+      <cite>——摘自某位用户的体验笔记</cite>
+    </div>
+
+    <p>
+      如果你对某个功能或板块有特别的疑问，不妨先在站内帮助区域停留片刻，那里往往有简洁的说明。另外，保持浏览器为较新版本，也能让页面呈现得更完整。
+    </p>
+    <p style="margin-top:1.6rem; color:#7a6b56; font-size:0.95rem;">
+      — 愿每一次打开都清晰、平稳。
+    </p>
+  </div>
+
+  <!-- 隐式种子 (仅用于变化) 不显示 -->
+</div>
+</body>
+</html>
